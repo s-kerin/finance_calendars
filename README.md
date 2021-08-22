@@ -9,8 +9,8 @@ Simple wrapper of NASDAQ public API for Financial Calendars
 * Splits History
 
 ### Install
-Use the following pip command
-`<pip install finance-calendars>`
+Use the following pip command:
+> pip install finance-calendars
 
 ## Methods & Classes
 get_earnings_today()
