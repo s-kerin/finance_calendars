@@ -1,6 +1,8 @@
 # finance_calendars
 Simple wrapper of NASDAQ public API for Financial Calendars.  This returns calendar data on *ALL* US stocks.
 
+Has this project saved you time and/or money?  Consider buying me a coffee with the sponser link to the right.
+
 ## Features
 * Earnings Calendar
 * IPO Calendar
