@@ -64,13 +64,6 @@ def get_splits_by_date(date:datetime = None):
     url = 'https://api.nasdaq.com/api/calendar/splits'
     return __get_calendar_query(url, date=date)
 
-def get_spos_this_month():
-    return get_spos_by_date()
-
-def get_spos_by_date(date:datetime = None):
-    url = 'https://api.nasdaq.com/api/spos/calendar'
-    return __get_calendar_query(url, date=date, subcolumn=['priced'], date_is_month=True)
-
 def get_div_hist_per_stock(symbol:str):
     url = 'https://api.nasdaq.com/api/quote/' + symbol + '/dividends'
     params = {'assetclass' : 'stocks'}
