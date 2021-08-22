@@ -95,3 +95,59 @@ get_div_hist_per_etf(symbol:str)
 ```
 Returns all dividend history for the given ETF.
 
+## Examples
+
+```
+from finance_calendars import finance_calendars as fc
+from datetime import datetime, date
+import pandas as pd
+
+earnings =fc.get_earnings_today()
+print(earnings[:5])
+
+earnings = fc.get_earnings_by_date(datetime(2021, 8, 16, 0, 0))
+print(earnings[:5])
+
+dividends = fc.get_dividends_today()
+print(dividends[:5])
+
+dividends = fc.get_dividends_by_date(datetime(2021, 8, 16, 0, 0))
+print(dividends[:5])
+
+ipos = fc.get_priced_ipos_this_month()
+print(ipos[:5])
+
+ipos = fc.get_priced_ipos_by_month(datetime(2021, 7, 1, 0, 0))
+print(ipos[:5])
+
+ipos = fc.get_filed_ipos_this_month()
+print(ipos[:5])
+
+ipos = fc.get_filed_ipos_by_month(datetime(2021, 7, 1, 0, 0))
+print(ipos[:5])
+
+ipos = fc.get_withdrawn_ipos_this_month()
+print(ipos[:5])
+
+ipos = fc.get_withdrawn_ipos_by_month(datetime(2021, 7, 1, 0, 0))
+print(ipos[:5])
+
+ipos = fc.get_upcoming_ipos_this_month()
+print(ipos[:5])
+
+ipos = fc.get_upcoming_ipos_by_month(datetime(2021, 7, 1, 0, 0))
+print(ipos[:5])
+
+splits = fc.get_splits_today()
+print(splits[:5])
+
+splits = fc.get_splits_by_date(datetime(2021, 8, 16, 0, 0))
+print(splits[:5])
+
+div_hist = fc.get_div_hist_per_stock('AAPL')
+print(div_hist)
+
+div_hist = fc.get_div_hist_per_etf('VIG')
+print(div_hist)
+```
+
